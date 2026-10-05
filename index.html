@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio  Website -Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- head mein -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+
+<!-- body ke end mein, apne existing script se pehle -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <!-- ---------------header section--------------- -->
+        <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Shaheen.webp" class="logo">
+            <ul id="navList">
+              
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+               <li><a href="#my-skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+              <i class="fa-solid fa-bars" id="menu-icon" onclick="toggleMenu()"></i> 
+        </nav>
+      <div id="overlay" onclick="toggleMenu()"></div>
+
+    </div>
+
+    <div class="header-content">
+        <div class="header-text" data-aos="fade-right" data-aos-duration="1000">
+            <p>Full-Stack Developer</p>
+            <h1>Hi, I'm <span>Shahzeen</span><br> From Pakistan</h1>
+            <p class="role-text"><span id="typed-text"></span><span class="cursor">|</span></p>
+            <div class="header-btns">
+            <a href="#contact" class="btn">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        </div>
+            <!-- <div class="header-visual">
+    <div class="image-wrapper">
+        <img src="download.png" alt="Shahzeen" class="profile-img">
+    </div>
+</div> -->
+        <div class="header-visual">
+    <div class="image-wrapper" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <img src="download.png" alt="Shahzeen" class="profile-img">
+        <div class="floating-badge badge-1"><i class="fa-brands fa-laravel"></i></div>
+        <div class="floating-badge badge-2"><i class="fa-brands fa-php"></i></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+   
+    <!-- --------------about section---------------- -->
+      <!-- <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image.jpeg">
+                
+            </div>
+      
+             <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+         I'm <span>Shahzeen</span>, a <span>Full-Stack Developer</span> from Pakistan with a passion for building
+        clean, functional, and user-friendly web applications. I work mainly with
+        HTML, CSS, JavaScript, and PHP/Laravel on the backend — turning ideas into
+        real, working products from start to finish. I enjoy solving problems,
+        writing organized code, and constantly learning new tools and technologies
+        to improve the way I build things.</p> 
+
+        <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+            <div class="tab-contents active-tab"  id="skills">
+                <ul>
+                   <li>
+    <strong>UI/UX</strong><br>
+    <span>Designing Web/App interfaces</span>
+</li>
+        <li><strong>Web Development</strong><br><span>Building responsive websites with HTML, CSS &amp; JavaScript</span></li>
+        <li><strong>JavaScript</strong><br><span>Developing interactive web applications</span></li>
+        <li><strong>PHP/Laravel</strong><br><span>Building robust backend systems</span></li>
+    </ul>   
+            </div>
+          
+            <div class="tab-contents" id="experience">
+      <ul>
+    <li>
+        <span>2026 - Current</span><br>
+        <strong>Web Development Intern</strong><br>
+        DynSoft Software — Working on Laravel projects, backend systems & UI development
+    </li>
+
+    <li>
+        <span>2025</span><br>
+        <strong>Freelance / Practice Projects</strong><br>
+        Built responsive websites using HTML, CSS, JavaScript & Laravel
+    </li>
+
+    <li>
+        <span>2025</span><br>
+        <strong>Web Development Training</strong><br>
+        Learned Laravel, PHP, JavaScript & Tailwind CSS through hands-on projects
+    </li>
+</ul>
+</div>
+            <div class="tab-contents"  id="education">
+        <ul>
+        <li>
+            <span>2026 - Current</span><br>
+            <strong>Internship at DynSoft Software</strong><br>
+            Web Development
+        </li>
+
+        <li>
+            <span>2025</span><br>
+            <strong>BS Physics</strong><br>
+            Govt. Graduate Murray College, Sialkot
+        </li>
+
+        <li>
+            <span>2025</span><br>
+            <strong>Web Development Skills</strong><br>
+            Laravel, JavaScript, Tailwind CSS
+        </li>
+
+        <li>
+            <span>2021</span><br>
+            <strong>FSc Pre-Medical</strong><br>
+            Punjab College, Pasrur
+        </li>
+
+        <li>
+            <span>2019</span><br>
+            <strong>Matric</strong><br>
+            Govt. Girls High School, Pasrur
+        </li>
+    </ul>   
+            </div>
+            </div>
+         
+        </div>
+    </div>
+</div>   -->
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
+                <img src="about.jpg">
+            </div>
+      
+             <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+         I'm <span>Shahzeen</span>, a <span>Full-Stack Developer</span> from Pakistan with a passion for building
+        clean, functional, and user-friendly web applications. I work mainly with
+        HTML, CSS, JavaScript, and PHP/Laravel on the backend — turning ideas into
+        real, working products from start to finish. I enjoy solving problems,
+        writing organized code, and constantly learning new tools and technologies
+        to improve the way I build things.</p> 
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="0">
+                    <strong>UI/UX</strong><br>
+                    <span>Designing Web/App interfaces</span>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <strong>Web Development</strong><br><span>Building responsive websites with HTML, CSS &amp; JavaScript</span>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <strong>JavaScript</strong><br><span>Developing interactive web applications</span>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <strong>PHP/Laravel</strong><br><span>Building robust backend systems</span>
+                </li>
+            </ul>   
+        </div>
+      
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="0">
+                    <span>2026 - Current</span><br>
+                    <strong>Web Development Intern</strong><br>
+                    DynSoft Software — Working on Laravel projects, backend systems & UI development
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <span>2025</span><br>
+                    <strong>Freelance / Practice Projects</strong><br>
+                    Built responsive websites using HTML, CSS, JavaScript & Laravel
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <span>2025</span><br>
+                    <strong>Web Development Training</strong><br>
+                    Learned Laravel, PHP, JavaScript & Tailwind CSS through hands-on projects
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="0">
+                    <span>2026 - Current</span><br>
+                    <strong>Internship at DynSoft Software</strong><br>
+                    Web Development
+                </li>
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <span>2025</span><br>
+                    <strong>BS Physics</strong><br>
+                    Govt. Graduate Murray College, Sialkot
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <span>2025</span><br>
+                    <strong>Web Development Skills</strong><br>
+                    Laravel, JavaScript, Tailwind CSS
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                    <span>2021</span><br>
+                    <strong>FSc Pre-Medical</strong><br>
+                    Punjab College, Pasrur
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <span>2019</span><br>
+                    <strong>Matric</strong><br>
+                    Govt. Girls High School, Pasrur
+                </li>
+            </ul>   
+        </div>
+        </div>
+        </div>
+    </div>
+</div>  
+<!-- -------------services section------------------ -->
+   <!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title" >My Services</h1>
+        <div class="services-list">
+       
+            <i class="fa-regular fa-code"></i>
+             <h2>Websites Development</h2>
+             <p>Building responsive and user-friendly websites using modern PHP-based technologies with clean code, I focus on writing quality code that all devices.</p>
+            <a href="#">Learn more</a>
+</div>
+                 <div>
+                    <i class="fa-brands fa-laravel"></i>
+                    <h2>Laravel Development</h2>
+                     <p>Developing robust, scalable web applications using Laravel framework with clean, maintainable code.</p>
+
+                    <a href="#">Learn more</a>
+                </div>
+                 <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>MySQL Database Design</h2>
+                     <p>Designing efficient database structures, writing optimized queries, and managing relationships using MySQL.</p>
+                    <a href="#">Learn more</a>
+                </div>
+        
+        </div>
+    </div>  -->
+ 
+  <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+
+            <div>
+                <i class="fa-regular fa-code"></i>
+                <h2>Websites Development</h2>
+                <p>Building responsive and user-friendly websites using modern PHP-based technologies with clean code, I focus on writing quality code that all devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-laravel"></i>
+                <h2>Laravel Development</h2>
+                <p>Developing robust, scalable web applications using Laravel framework with clean, maintainable code.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>MySQL Database Design</h2>
+                <p>Designing efficient database structures, writing optimized queries, and managing relationships using MySQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>   
+
+ <!-- ===== SKILLS SECTION ===== -->
+<!-- <section id="my-skills" class="skills">
+  <div class="skills-header" data-aos="fade-up">
+    <span class="skills-tag">What I Work With</span>
+    <h2>My Skills</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="skill-icon" style="color:#777bb4;">PHP</div>
+      <h3>PHP</h3>
+      <div class="skill-bar"><span style="width:90%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-icon" style="color:#ff2d20;">Lv</div>
+      <h3>Laravel</h3>
+      <div class="skill-bar"><span style="width:90%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-icon" style="color:#4479a1;">DB</div>
+      <h3>MySQL</h3>
+      <div class="skill-bar"><span style="width:85%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-icon" style="color:#f7df1e;">JS</div>
+      <h3>JavaScript</h3>
+      <div class="skill-bar"><span style="width:75%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+      <div class="skill-icon" style="color:#e34c26;">&lt;/&gt;</div>
+      <h3>HTML5</h3>
+      <div class="skill-bar"><span style="width:95%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+      <div class="skill-icon" style="color:#264de4;">{ }</div>
+      <h3>CSS3</h3>
+      <div class="skill-bar"><span style="width:90%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+      <div class="skill-icon" style="color:#f05032;">Git</div>
+      <h3>Git &amp; GitHub</h3>
+      <div class="skill-bar"><span style="width:80%;"></span></div>
+    </div>
+
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+      <div class="skill-icon" style="color:#ff004f;">API</div>
+      <h3>REST APIs</h3>
+      <div class="skill-bar"><span style="width:85%;"></span></div>
+    </div>
+
+  </div>
+</section> -->
+<!-- ===== SKILLS SECTION ===== -->
+<section id="my-skills" class="skills">
+  <div class="skills-header" data-aos="fade-up">
+     <span class="skills-tag">What I Work With</span>
+
+    <h1>My Skills</h1>
+      <p class="skills-desc">Technologies and tools I use to build reliable, scalable backend systems and clean web applications.</p>
+
+  </div>
+
+  <div class="skills-list">
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="0">
+      <div class="skill-top">
+        <span class="skill-name">PHP</span>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-bar"><span style="width:90%;"></span></div>
+      <p class="skill-desc">Core language for building dynamic, server-side logic.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="50">
+      <div class="skill-top">
+        <span class="skill-name">Laravel</span>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-bar"><span style="width:90%;"></span></div>
+      <p class="skill-desc">Building scalable apps with clean, structured code.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-top">
+        <span class="skill-name">MySQL</span>
+        <span class="skill-percent">85%</span>
+      </div>
+      <div class="skill-bar"><span style="width:85%;"></span></div>
+      <p class="skill-desc">Designing efficient, relational database structures.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="150">
+      <div class="skill-top">
+        <span class="skill-name">JavaScript</span>
+        <span class="skill-percent">75%</span>
+      </div>
+      <div class="skill-bar"><span style="width:75%;"></span></div>
+      <p class="skill-desc">Adding interactivity to the front-end experience.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="200">
+      <div class="skill-top">
+        <span class="skill-name">HTML5 &amp; CSS3</span>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-bar"><span style="width:90%;"></span></div>
+      <p class="skill-desc">Structuring and styling responsive web pages.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="250">
+      <div class="skill-top">
+        <span class="skill-name">REST APIs</span>
+        <span class="skill-percent">85%</span>
+      </div>
+      <div class="skill-bar"><span style="width:85%;"></span></div>
+      <p class="skill-desc">Building secure APIs for web and mobile apps.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="300">
+      <div class="skill-top">
+        <span class="skill-name">Git &amp; GitHub</span>
+        <span class="skill-percent">80%</span>
+      </div>
+      <div class="skill-bar"><span style="width:80%;"></span></div>
+      <p class="skill-desc">Version control and collaborative development.</p>
+    </div>
+
+    <div class="skill-row" data-aos="fade-up" data-aos-delay="350">
+      <div class="skill-top">
+        <span class="skill-name">Database Design</span>
+        <span class="skill-percent">85%</span>
+      </div>
+      <div class="skill-bar"><span style="width:85%;"></span></div>
+      <p class="skill-desc">Planning schemas for performance and scalability.</p>
+    </div>
+
+</div>
+</section>
+
+<!-- ---------------projects section--------------- -->
+
+ <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="hotel.booking.webp">
+                <div class="layer">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h3>Hotel Booking System</h3>
+                    <p>A Laravel &amp; MySQL based hotel booking system with room management, online booking &amp; admin panel.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="school management system.webp">
+                <div class="layer">
+                    <i class="fa-solid fa-school"></i>
+                    <h3>School Management System</h3>
+                    <p>Custom school management system built with PHP, Laravel &amp; MySQL — handles students, attendance &amp; results.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="ok.jpg">
+                <div class="layer">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Portfolio Website</h3>
+                    <p>Responsive personal portfolio built using HTML, CSS &amp; JavaScript.</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#" class="btn">See more</a>
+    </div>
+</div> 
+
+<!-- -------------contact section-------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="fade-right">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+<p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <!-- <a href="#" class="btn btn2">Download CV</a> -->
+                 <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left">
+                
+                <form>
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn btn2">Submit</button>
+</form>
+   
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright">
+    <p>Copyright © shazeen Made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+</div> -->
+</div>
+<!-- ---------------footer section--------------- -->
+<footer id="footer">
+    <div class="container footer-container">
+
+        <div class="footer-col">
+            <!-- <h2 class="footer-logo">Shahzeen<span>.</span></h2> -->
+             <h2 class="footer-logo">
+    <img src="Shaheen.webp" alt="Shahzeen" style="height: 100px;">
+</h2>
+            <p>Full-Stack Developer specializing in PHP, Laravel &amp; MySQL — building clean, scalable web applications.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+                <li>Website Development</li>
+                <li>Laravel Development</li>
+                <li>MySQL Database Design</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Get In Touch</h3>
+            <ul class="footer-contact">
+                <li><i class="fa-solid fa-envelope"></i> contact@example.com</li>
+                <li><i class="fa-solid fa-phone"></i> 0123-4567890</li>
+                <li><i class="fa-solid fa-location-dot"></i> Sialkot, Pakistan</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <div class="footer-bottom">
+        <p>© 2026 Shahzeen. All Rights Reserved.</p>
+    </div> -->
+    <!-- Yeh purana wala hata dein -->
+<div class="copyright">
+    <p>© 2026 Shahzeen. All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    const roles = ["PHP / Laravel Developer", "Backend Developer", "MySQL Database Designer"];
+let roleIndex = 0, charIndex = 0, isDeleting = false;
+const typedText = document.getElementById("typed-text");
+
+function typeEffect(){
+    const current = roles[roleIndex];
+    if(isDeleting){
+        typedText.textContent = current.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        typedText.textContent = current.substring(0, charIndex + 1);
+        charIndex++;
+    }
+    let speed = isDeleting ? 40 : 80;
+    if(!isDeleting && charIndex === current.length){
+        speed = 1500;
+        isDeleting = true;
+    } else if(isDeleting && charIndex === 0){
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 300;
+    }
+    setTimeout(typeEffect, speed);
+}
+typeEffect();
+</script>
+<script>
+AOS.init({
+    duration: 800,
+    once: false,        // false = har baar animate hoga jab section view mein aayega
+    mirror: true,        // scroll up karte waqt bhi reverse animation chalegi
+    offset: 100,
+    easing: 'ease-out-cubic'
+});
+function opentab(tabname){
+    for(let tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(let tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    AOS.refreshHard();
+}
+</script>
+<script>
+   function toggleMenu(){
+    document.getElementById('navList').classList.toggle('active');
+}
+
+document.addEventListener('click', function(e){
+    const navList = document.getElementById('navList');
+    const menuIcon = document.getElementById('menu-icon');
+    if(!navList.contains(e.target) && !menuIcon.contains(e.target)){
+        navList.classList.remove('active');
+    }
+});
+
+</script>
+<script>
+    function toggleMenu(){
+    document.getElementById('navList').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
+}
+</script>
+</body>
+</html>
